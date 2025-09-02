@@ -1,0 +1,12 @@
+# Exported from Render on 2025-09-02T18:54:46Z
+services:
+- type: web
+  name: express-hello-world
+  runtime: node
+  repo: https://github.com/dtaylor2358/express-hello-world
+  plan: starter
+  region: oregon
+  buildCommand: yarn --frozen-lockfile install
+  startCommand: node app.js
+  autoDeployTrigger: commit
+version: "1"
