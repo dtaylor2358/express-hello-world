@@ -9,4 +9,7 @@ services:
   buildCommand: yarn --frozen-lockfile install
   startCommand: node app.js
   autoDeployTrigger: commit
+  envVars:
+  - key: DATABASE_URL
+    value: django-app-db
 version: "1"
